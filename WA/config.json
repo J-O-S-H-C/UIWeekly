@@ -1,0 +1,88 @@
+{
+    "credentials": {
+        "username": "none",
+        "password": "none"
+    },
+    "settings": {
+        "save": "True"
+
+    },
+    "quest": {
+        "1": {
+            "ALL" : {
+                "question": "Did you or will you receive paid time off or sick, vacation or holiday pay?",
+                "answer": "No"
+            }
+        },
+        "2": {
+            "ALL" : {
+                "question": "Are you getting paid for any period after you last worked, such as severance pay, pay in lieu of notice, or termination pay?",
+                "answer": "No"
+            }
+        },
+        "3": {
+            "ALL" : {
+                "question": "Did you work for any employer(s), whether you have been paid yet or not?",
+                "answer": "No"
+            }
+        },
+        "4": {
+            "ALL" : {
+                "question": "Did you work in self-employment or casual labor, whether you have been paid yet or not?",
+                "answer": "No"
+            }
+        },
+        "5": {
+            "ALL" : {
+                "question": "Have you been or will you be paid for jury duty?",
+                "answer": "No"
+            }
+        },
+        "6": {
+            "ALL" : {
+                "question": "Did you apply for or receive workers' compensation for an on-the-job injury?",
+                "answer": "No"
+            }
+        },
+        "7": {
+            "ALL" : {
+                "question": "Other than Social Security, did you apply for or have a change in a retirement plan not previously reported?",
+                "answer": "No"
+            }
+        },
+        "8": {
+            "ALL" : {
+                "question": "Did you begin attending a school or training program?",
+                "answer": "No"
+            }
+        },
+        "9": {
+            "ALL" : {
+                "question": "Were you physically able and available for work each day of the week?",
+                "answer": "Yes"
+            }
+        },
+        "10": {
+            "PUA": {
+                "question": "Did you complete at least one job search activity and keep a written record as required? If you didn’t complete at least one activity, you must answer No.",
+                "answer": "No"
+            },
+            "UI": {
+                "question": "Did you complete at least three job search activities and keep a written record as required? If you didn’t complete at least three activities, you must answer No.",
+                "answer": "No"
+            }
+        },
+        "11": {
+            "ALL" : {
+                "question": "Did you refuse any offer of work?",
+                "answer": "No"
+            }
+        },
+        "12": {
+            "ALL" : {
+                "question": "Did you fail to apply for a job that you were referred to by WorkSource?",
+                "answer": "No"
+            }
+        }
+    }
+}
