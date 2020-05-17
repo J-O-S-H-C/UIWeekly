@@ -7,7 +7,7 @@ with open('config.json', encoding='utf-8') as file:
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
 
-if(config["login"]["username"] and config["login"]["password"] != "none"):
+if(config["credentials"]["username"] and config["credentials"]["password"] != "none"):
     username = config["credentials"]["username"]
     password = config["credentials"]["password"]
 else:
@@ -30,14 +30,14 @@ def next():
         driver.find_element_by_id("j-o1").click()
     except:
         prRed("Could not go to next page.")
-        break
+        driver.quit()
 
 def save():
     try:
         driver.find_element_by_id("j-l1").click()
     except:
         prRed("Weekly Claim Failed to save.")
-        break
+        driver.quit()
 
 def questionVerify(question):
     for element in driver.find_elements_by_xpath(".//span[@class='CaptionLabel ']"):
@@ -47,8 +47,9 @@ def questionVerify(question):
 
 def getAnswer(question):
     for title in config["quest"]:
-        if(question.lower() == config["quest"][title]["question"].lower()):
-            return config["quest"][title]["answer"]
+        for claimType in config["quest"][title]:
+            if(question.lower() == config["quest"][title][claimType]["question"].lower()):
+                return config["quest"][title][claimType]["answer"]
 
 def spanText(test, tag=None, type=None):
     if(type != None and tag != None and type.lower() == "class"):
@@ -114,5 +115,5 @@ if(config["settings"]["save"]):
     save()
     prGreen("Weekly claim has been saved")
     driver.quit()
-
-next()#presents summary if not saving
+else:
+    next()#presents summary if not saving
