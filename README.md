@@ -1,5 +1,5 @@
 # UIWeekly
-Python Selenium webdriver for filing state Unemployment weekly claims.
+Python Selenium webdriver for filing state Unemployment weekly claims. Currently works on both PUA and UI sets of questions.
 
 # Contribution
 If you would like to contribute your own state site, please name the fork and directory your state's abbreviation and create a json config and python script.
